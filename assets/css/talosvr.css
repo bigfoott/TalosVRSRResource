@@ -1,0 +1,157 @@
+html {
+	background-color: #1e1e21;
+}
+body {
+	font-family: Whitney;
+	color: #fff;
+}
+a {
+	color: #17D0DB;
+	font-weight: bold;
+}
+a:hover {
+	color: #0aa2ad;
+}
+a:focus {
+	color: #148991;
+}
+
+.tabs a, .tabs li.is-active a {
+	color: #fff;
+}
+.table {
+	background-color: #282830;
+	color: #fff;
+}
+.table thead td, .table thead th {
+	background-color: #383840;
+	color: #fff;
+}
+.table td, .table th {
+	border-color: #282830;
+}
+
+.leaderboard-tabs {
+	margin-bottom: 0 !important;
+}
+.placeimg {
+	max-width: 16px;
+	max-height: 16px;
+	position: relative;
+	top: -3px;
+	margin-right: 4px !important;
+	vertical-align: middle;
+	border: 0;
+}
+.subheader {
+	font-family: Optimus;
+	font-size: 2em;
+}
+.title, .subtitle {
+	color: #fff;
+	font-family: Optimus;
+}
+.subtitle {
+	font-family: Whitney;
+}
+.is-centered {
+	text-align: center;
+}
+.tabs ul {
+	border-bottom: 0px transparent;
+}
+.tabs.is-boxed li.is-active a {
+	background-color: #393941;
+	border-color: transparent;
+}
+.tabs.is-boxed li:not(.is-active) a:hover {
+	background-color: #282830;
+	color: #fff;
+}
+.lb_note {
+	font-size: 1em;
+	text-align: right;
+	width: 5%;
+}
+.table {
+	table-layout: fixed;
+}
+.message {
+	background-color: #282830;
+	border-radius: 0;
+	flex: 1;
+}
+.message-header {
+	background-color: #383840;
+	border-radius: 0;
+	
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+.message.is-nested {
+	background-color: #2a2a36;
+}
+.message.is-nested > .message-header {
+	background-color: #3a3a46;
+}
+.message-body {
+	color: #fff;
+}
+.message-body > p:not(.subtitle) {
+	padding-bottom: 1.25em;
+}
+.is-responsive-vid {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+.is-responsive-vid iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+/* Font */
+@font-face {
+	font-family:Whitney;
+	font-style:light;
+	font-weight:300;
+	src:url(https://discordapp.com/assets/6c6374bad0b0b6d204d8d6dc4a18d820.woff) format("woff");
+}
+@font-face {
+	font-family:Whitney;
+	font-style:normal;
+	font-weight:500;
+	src:url(https://discordapp.com/assets/e8acd7d9bf6207f99350ca9f9e23b168.woff) format("woff");
+}
+@font-face {
+	font-family:Whitney;
+	font-style:medium;
+	font-weight:600;
+	src:url(https://discordapp.com/assets/3bdef1251a424500c1b3a78dea9b7e57.woff) format("woff");
+}
+@font-face {
+	font-family:WhitneyMedium;
+	font-style:medium;
+	font-weight:600;
+	src:url(https://discordapp.com/assets/be0060dafb7a0e31d2a1ca17c0708636.woff) format("woff");
+}
+@font-face {
+	font-family:Whitney;
+	font-style:bold;
+	font-weight:700;
+	src:url(https://discordapp.com/assets/8e12fb4f14d9c4592eb8ec9f22337b04.woff) format("woff");
+}
+
+@font-face {
+	font-family:Optimus;
+	font-style:light;
+	font-weight:300;
+	src:url(../fonts/optimusprinceps.ttf);
+}
