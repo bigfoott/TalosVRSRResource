@@ -22,7 +22,7 @@
 			<section class="section">
 				<div class="is-centered">
 					<img id="logo" src="images/talosvr_logo.png"></img>
-					<div class="subheader">SPEEDRUNNING RESOURCES</div>
+					<div class="subheader">SPEEDRUNNING RESOURCE</div>
 				</div>
 			</section>
 			<section class="section">
@@ -207,7 +207,7 @@
 				</article>
 			</section>
 			<section class="section">
-				<center>&copy; <?php call_user_func(function($y){$c=date('Y');echo $y.(($y!=$c)?'-'.$c:'');}, 2018); ?> | Run data sourced from <a href="https://www.speedrun.com/talos_principle_category_extensions#Talos_VR">SpeedRun.com</a> |  Site created by Bigfoot.</center>
+				<center>&copy; <?php call_user_func(function($y){$c=date('Y');echo $y.(($y!=$c)?'-'.$c:'');}, 2018); ?> | Run data sourced from <a href="https://www.speedrun.com/talos_principle_category_extensions#Talos_VR">SpeedRun.com</a> | View this project on <a href="https://github.com/bigfoott/TalosVRSRResource">GitHub</a> |  Site created by Bigfoot.</center>
 			</section>
 		</div>
 		<script type="text/javascript" src="assets/js/talosvr.js"></script>
