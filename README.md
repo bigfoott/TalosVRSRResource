@@ -1,1 +1,1 @@
-Source for my [Talos VR Speedrunning Resources](https://bigft.io/talosvr) page.
+Source for my [Talos VR Speedrunning Resource](https://bigft.io/talosvr) page.
