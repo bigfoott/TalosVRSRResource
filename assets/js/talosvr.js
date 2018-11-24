@@ -191,10 +191,18 @@ function getUrlVars() {
     });
     return vars;
 }
-function getUrlParam(parameter, defaultvalue){
+function getUrlParam(parameter, defaultvalue) {
     var urlparameter = defaultvalue;
     if(window.location.href.indexOf(parameter) > -1){
         urlparameter = getUrlVars()[parameter];
         }
     return urlparameter;
+}
+
+function collapse(id) {
+	var div = document.getElementById(`col_${id}`);
+	if (div.style.display == "none")
+		div.style.display = "block";
+	else
+		div.style.display = "none";
 }

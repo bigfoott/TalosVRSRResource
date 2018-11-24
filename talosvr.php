@@ -4,9 +4,9 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
-		<link rel="icon" href="images/favicon.png">
+		<link rel="icon" href="images/talosvr_fav.ico">
 		
-		<title>Bigft - Talos VR Resources</title>
+		<title>Talos VR Speedrunning Resource</title>
 		
 		<meta content="Bigft.io" property="og:site_name">
 		<meta content="Talos VR Speedrunning Resources" property="og:title">
@@ -116,95 +116,6 @@
 						</article>
 					</div>
 				</div>
-			</section>
-			<section>
-				<p class="is-hidden-touch title is-2 is-spaced">Routes</p>
-				<center class="is-hidden-desktop"><p class="title is-2 is-spaced">Routes</p></center>
-				<p class="subtitle is-4">Due to the difference in tricks and glitches from the flat version, there are different routes for VR.</p>
-				<article class="message" style="display:none;">
-					<div class="message-header">
-						<p>Any%</p>
-					</div>
-					<div class="message-body">
-						<p></p>
-					</div>
-				</article>
-				<article class="message" style="display:none;">
-					<div class="message-header">
-						<p>All Sigils</p>
-					</div>
-					<div class="message-body">
-						<p></p>
-					</div>
-				</article>
-				<article class="message">
-					<div class="message-header">
-						<p>Gehenna Any%</p>
-					</div>
-					<div class="message-body">
-						<p class="subtitle is-4">World 3</p>
-						<p class="subtitle is-5">Order: BFF -> Ray Trivia -> Pendulum -> Harmony</p>
-						
-						<div class="columns">
-							<div class="column is-flex">
-								<article class="message is-nested">
-									<div class="message-header">
-										<p>BFF</p>
-									</div>
-									<div class="message-body">
-										<p>To solve BFF, jam the barrier directly ahead when you look through the doorway under the turret.</p>
-										<p>Then grab a cube and walk around the turret, and then place the cube on the pressure plate and jump on it.</p>
-										<p>Position yourself on the back corner of it, and then look towards the corner of the wall, and a guided jump should appear.</p>
-										<p>Jump there, then jump across the walls to get to the switch. Then reset to spawn.</p>
-									</div>
-								</article>
-							</div>
-							<div class="column is-flex">
-								<article class="message is-nested">
-									<div class="message-header">
-										<p>Ray Trivia</p>
-									</div>
-									<div class="message-body">
-										<p><i>Solved as intended.</i></p>
-									</div>
-								</article>
-							</div>
-						</div>
-						
-						<p class="subtitle is-5">Ray Trivia</p>
-						
-						
-						<p class="subtitle is-5">Pendulum</p>
-						<p class="subtitle is-5">Harmony</p>
-						
-						<p class="subtitle is-4">World 4</p>
-						<p class="subtitle is-5">Press and Jam</p>
-						<p class="subtitle is-5">Goliath</p>
-						<p class="subtitle is-5">Air Delivery</p>
-						<p class="subtitle is-5">Colliding Beams</p>
-						
-						<p class="subtitle is-4">World 1</p>
-						<p class="subtitle is-5">The Swapper</p>
-						<p class="subtitle is-5">Through a Window</p>
-						<p class="subtitle is-5">So Close So Far</p>
-						<p class="subtitle is-5">Open Field</p>
-						
-						<p class="subtitle is-4">World 2</p>
-						<p class="subtitle is-5">Bunny Hop</p>
-						<p class="subtitle is-5">Static Vexxer</p>
-						<p class="subtitle is-5">Hexahedron Driver</p>
-						<p class="subtitle is-5">Haircut</p>
-						<p class="subtitle is-5">Crater</p>
-					</div>
-				</article>
-				<article class="message" style="display:none;">
-					<div class="message-header">
-						<p>Gehenna 100%</p>
-					</div>
-					<div class="message-body">
-						<p></p>
-					</div>
-				</article>
 			</section>
 			<section class="section">
 				<center>&copy; <?php call_user_func(function($y){$c=date('Y');echo $y.(($y!=$c)?'-'.$c:'');}, 2018); ?> | Run data sourced from <a href="https://www.speedrun.com/talos_principle_category_extensions#Talos_VR">SpeedRun.com</a> | View this project on <a href="https://github.com/bigfoott/TalosVRSRResource">GitHub</a> |  Site created by Bigfoot.</center>

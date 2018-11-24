@@ -73,6 +73,15 @@ a:focus {
 	text-align: right;
 	width: 5%;
 }
+.lb_note a {
+	color: #fff;
+}
+.lb_note a:hover {
+	color: #ccc;
+}
+.lb_note a:focus {
+	color: #999;
+}
 .table {
 	table-layout: fixed;
 }
@@ -115,6 +124,9 @@ a:focus {
     height: 100%;
     width: 100%;
     position: absolute;
+}
+.box {
+	background-color: #303038;
 }
 
 /* Font */
