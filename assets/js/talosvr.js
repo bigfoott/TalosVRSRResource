@@ -1,17 +1,20 @@
-var json;
+var any;
+var all_sigils;
+var geh_any;
+var geh_100;
 
 function onLoad()
 {
 	fetchData();
 	
-	if (!json)
+	if (!any || !all_sigils || !geh_any || !geh_100)
 	{
 		var interval = setInterval(function() {
-		if (!json) return;
+		if (!any || !all_sigils || !geh_any || !geh_100) return;
 		clearInterval(interval);
 
 		if (window.location.hash == '')
-			loadBoard('geh_any');
+			loadBoard('any');
 		else
 		{
 			var h = window.location.hash.toLowerCase().slice(1);
@@ -20,7 +23,7 @@ function onLoad()
 				loadBoard(h);
 			}
 			else
-				loadBoard('geh_any');
+				loadBoard('any');
 		}
 		
 		}, 10);
@@ -34,7 +37,8 @@ function onLoad()
 
 function fetchData()
 {
-	var result = fetch("https://www.speedrun.com/api/v1/leaderboards/j1ne7491/category/n2y30lmd?embed=players,platforms,variables", {
+	// any
+	var result = fetch("https://www.speedrun.com/api/v1/leaderboards/j1ne7491/category/n2y30lmd?embed=players,platforms,variables&var-j84krwjn=21ggvjm1", {
       method: "get",
       dataType: "json",
       headers: {
@@ -42,12 +46,45 @@ function fetchData()
       }
     })
 	.then(res => res.json())
-	.then(data => json = data);
+	.then(data => any = data);
+	
+	// all_sigils
+	result = fetch("https://www.speedrun.com/api/v1/leaderboards/j1ne7491/category/n2y30lmd?embed=players,platforms,variables&var-j84krwjn=jqz486ml", {
+      method: "get",
+      dataType: "json",
+      headers: {
+        "Accept": "application/json",
+      }
+    })
+	.then(res => res.json())
+	.then(data => all_sigils = data);
+	
+	// geh_any
+	result = fetch("https://www.speedrun.com/api/v1/leaderboards/j1ne7491/category/n2y30lmd?embed=players,platforms,variables&var-j84krwjn=klr7vz2q", {
+      method: "get",
+      dataType: "json",
+      headers: {
+        "Accept": "application/json",
+      }
+    })
+	.then(res => res.json())
+	.then(data => geh_any = data);
+	
+	// geh_100
+	result = fetch("https://www.speedrun.com/api/v1/leaderboards/j1ne7491/category/n2y30lmd?embed=players,platforms,variables&var-j84krwjn=21dd92j1", {
+      method: "get",
+      dataType: "json",
+      headers: {
+        "Accept": "application/json",
+      }
+    })
+	.then(res => res.json())
+	.then(data => geh_100 = data);
 }
 
 function loadBoard(board)
 {
-	var variable;
+	var json;
 	
 	if (board == "any")
 	{
@@ -58,7 +95,7 @@ function loadBoard(board)
 		
 		//location.href = "#any";
 		
-		variable = "21ggvjm1";
+		json = any;
 	}
 	else if (board == "all_sigils")
 	{
@@ -69,7 +106,7 @@ function loadBoard(board)
 		
 		//location.href = "#all_sigils";
 		
-		variable = "jqz486ml";
+		json = all_sigils;
 	}
 	else if (board == "geh_any")
 	{
@@ -80,7 +117,7 @@ function loadBoard(board)
 		
 		//location.href = "#geh_any";
 		
-		variable = "klr7vz2q";
+		json = geh_any;
 	}
 	else if (board == "geh_100")
 	{
@@ -91,7 +128,7 @@ function loadBoard(board)
 		
 		//location.href = "#geh_100";
 		
-		variable = "21dd92j1";
+		json = geh_100;
 	}
 	
 	var array = [];
@@ -101,10 +138,7 @@ function loadBoard(board)
 	
 	for (var i = 0; i < json.data.runs.length; i++)
 	{
-		var r = json.data.runs[i];
-		if (r.run.values.hasOwnProperty("j84krwjn"))
-			if (r.run.values.j84krwjn == variable)
-				array.push(r);
+		array.push(json.data.runs[i]);
 	}
 	
 	array = array.sort(function(a, b) { return a.place - b.place; });
@@ -143,13 +177,19 @@ function loadBoard(board)
 		var time = (array[i].run.times.realtime_noloads).replace('PT','').replace('H','h ').replace('M','m ').replace('S','s');
 		var time_loads = (array[i].run.times.realtime).replace('PT','').replace('H','h ').replace('M','m ').replace('S','s');
 		
+		var date = new Date();
+		if (array[i].run.date != null)
+			date = new Date(array[i].run.date);
+		else
+			date = new Date(array[i].run.submitted);
+		
 		html += `<tr>
 		<td>${place}</td>
 		<td><a href="${player.weblink}">${player.names.international}</a></td>
 		<td title="With loads: ${time_loads}">${time}</td>
 		<td class="is-hidden-touch">${variables[0].values.values[array[i].run.values['9l73xj7n']].label}</td>
 		<td class="is-hidden-touch">${platform.name}</td>
-		<td title="${new Date(array[i].run.submitted)}" class="is-hidden-touch">${timeAgo(new Date(array[i].run.submitted))}</td>
+		<td title="${date}" class="is-hidden-touch">${timeAgo(date)}</td>
 		<td class="lb_note is-hidden-touch"><i title="${array[i].run.comment}" class="far fa-sticky-note"></i> <a href="${array[i].run.weblink}" class="fas fa-link"></a></td></tr>`;
 	}
 	if (html == '')
