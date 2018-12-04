@@ -53,6 +53,33 @@
 				</table>
 			</section>
 			<section class="section">
+				<p class="is-hidden-touch title is-2 is-spaced">About</p>
+				<center class="is-hidden-desktop"><p class="title is-2 is-spaced">About</p></center>
+				<div class="columns">
+					<div class="column is-flex">
+						<article class="message">
+							<div class="message-header">
+								<p>What is The Talos Principle?</p>
+							</div>
+							<div class="message-body">
+								<p>TTP is a philosophical puzzle game. The main goal is to collect "sigils" that allow you to unlock doors and puzzle mechanics.</p>
+							</div>
+						</article>
+					</div>
+					<div class="column is-flex">
+						<article class="message">
+							<div class="message-header">
+								<p>What's different between Talos flat and Talos VR?</p>
+							</div>
+							<div class="message-body">
+								<p>THe main differences are movement and precision. Many tricks performed in flat speedruns require the runner to do tricks by being in exact positions/lineups. These tricks are very hard/impossible in VR.</p>
+								<p>There are certain tricks (ex: Thin wall clip) that can only be done in VR.</p>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+			<section class="section">
 				<p class="is-hidden-touch title is-2 is-spaced">Tricks</p>
 				<center class="is-hidden-desktop"><p class="title is-2 is-spaced">Tricks</p></center>
 				<p class="subtitle is-4">There are some tricks that don't work in VR, and others that <i>only</i> work in VR. Learn about them below.</p>
