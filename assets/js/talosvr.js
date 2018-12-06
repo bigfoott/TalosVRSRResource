@@ -38,7 +38,7 @@ function onLoad()
 function fetchData()
 {
 	// any
-	var result = fetch("https://www.speedrun.com/api/v1/leaderboards/j1ne7491/category/n2y30lmd?embed=players,platforms,variables&var-j84krwjn=21ggvjm1", {
+	var result = fetch("https://www.speedrun.com/api/v1/leaderboards/j1nezx91/category/q257yq8d?embed=players,platforms,variables", {
       method: "get",
       dataType: "json",
       headers: {
@@ -49,7 +49,7 @@ function fetchData()
 	.then(data => any = data);
 	
 	// all_sigils
-	result = fetch("https://www.speedrun.com/api/v1/leaderboards/j1ne7491/category/n2y30lmd?embed=players,platforms,variables&var-j84krwjn=jqz486ml", {
+	result = fetch("https://www.speedrun.com/api/v1/leaderboards/j1nezx91/category/jdr7zxx2?embed=players,platforms,variables", {
       method: "get",
       dataType: "json",
       headers: {
@@ -60,7 +60,7 @@ function fetchData()
 	.then(data => all_sigils = data);
 	
 	// geh_any
-	result = fetch("https://www.speedrun.com/api/v1/leaderboards/j1ne7491/category/n2y30lmd?embed=players,platforms,variables&var-j84krwjn=klr7vz2q", {
+	result = fetch("https://www.speedrun.com/api/v1/leaderboards/j1nezx91/category/jdzvy8vk?embed=players,platforms,variables", {
       method: "get",
       dataType: "json",
       headers: {
@@ -71,7 +71,7 @@ function fetchData()
 	.then(data => geh_any = data);
 	
 	// geh_100
-	result = fetch("https://www.speedrun.com/api/v1/leaderboards/j1ne7491/category/n2y30lmd?embed=players,platforms,variables&var-j84krwjn=21dd92j1", {
+	result = fetch("https://www.speedrun.com/api/v1/leaderboards/j1nezx91/category/02ql5opk?embed=players,platforms,variables", {
       method: "get",
       dataType: "json",
       headers: {
@@ -187,7 +187,6 @@ function loadBoard(board)
 		<td>${place}</td>
 		<td><a href="${player.weblink}">${player.names.international}</a></td>
 		<td title="With loads: ${time_loads}">${time}</td>
-		<td class="is-hidden-touch">${variables[0].values.values[array[i].run.values['9l73xj7n']].label}</td>
 		<td class="is-hidden-touch">${platform.name}</td>
 		<td title="${date}" class="is-hidden-touch">${timeAgo(date)}</td>
 		<td class="lb_note is-hidden-touch"><i title="${array[i].run.comment}" class="far fa-sticky-note"></i> <a href="${array[i].run.weblink}" class="fas fa-link"></a></td></tr>`;

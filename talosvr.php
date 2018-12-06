@@ -41,8 +41,7 @@
 					<tr>
 					  <th>Rank</th>
 					  <th>Player</th>
-					  <th title="Time w/o loads.&#013;Hover over a time&#013;for time w/ loads. ">Time<span class="is-hidden-touch">*</span></th>
-					  <th class="is-hidden-touch">Version</th>	
+					  <th>Time</th>
 					  <th class="is-hidden-touch">Platform</th>
 					  <th class="is-hidden-touch">Date</th>
 					  <th class="is-hidden-touch lb_note"></th>
