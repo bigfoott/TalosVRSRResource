@@ -37,18 +37,19 @@
 					</ul>
 				</div>
 				<table class="table is-fullwidth">
-				  <thead>
-					<tr>
-					  <th>Rank</th>
-					  <th>Player</th>
-					  <th>Time</th>
-					  <th class="is-hidden-touch">Platform</th>
-					  <th class="is-hidden-touch">Date</th>
-					  <th class="is-hidden-touch lb_note"></th>
-					</tr>
-				  </thead>
-				  <tbody id="table_body">
-				  </tbody>
+					<thead>
+						<tr>
+							<th>Rank</th>
+							<th>Player</th>
+							<th>Time</th>
+							<th class="is-hidden-touch">Platform</th>
+							<th class="is-hidden-touch">Date</th>
+							<th class="is-hidden-touch lb_note"></th>
+						</tr>
+					</thead>
+					<tbody id="table_body">
+						<tr><td colspan=6><center>Loading...</center></td></tr>
+					</tbody>
 				</table>
 			</section>
 			<section class="section">
