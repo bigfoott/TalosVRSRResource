@@ -192,7 +192,8 @@ function loadBoard(board)
 		<td class="lb_note is-hidden-touch"><i title="${array[i].run.comment}" class="far fa-sticky-note"></i> <a href="${array[i].run.weblink}" class="fas fa-link"></a></td></tr>`;
 	}
 	if (html == '')
-		html = "<tr><td colspan=6><center>There are no runs in this category.</center></td></tr>";
+		html = `<tr><td colspan=6 class="is-hidden-touch"><center>There are no runs in this category.</center></td>
+				<td colspan=3 class="is-hidden-desktop"><center>There are no runs in this category.</center></td></tr>`;
 	document.getElementById("table_body").innerHTML = html;
 }
 

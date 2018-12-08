@@ -48,7 +48,9 @@
 						</tr>
 					</thead>
 					<tbody id="table_body">
-						<tr><td colspan=6><center>Loading...</center></td></tr>
+						<tr><td colspan=6 class="is-hidden-touch"><center>Loading...</center></td>
+							<td colspan=3 class="is-hidden-desktop"><center>Loading...</center></td>
+						</tr>
 					</tbody>
 				</table>
 			</section>
