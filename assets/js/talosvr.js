@@ -198,7 +198,7 @@ function loadBoard(board)
 }
 
 const NOW = new Date()
-const times = [["second", 1], ["minute", 60], ["hour", 3600], ["day", 86400], ["week", 604800], ["month", 2592000], ["year", 31536000]]
+const times = [["second", 1], ["minute", 60], ["hour", 3600], ["day", 86400], ["month", 2592000], ["year", 31536000]]
 
 function timeAgo(date) {
     var diff = Math.round((NOW - date) / 1000)
