@@ -26,7 +26,7 @@
 				</div>
 			</section>
 			<section class="section">
-				<p class="is-hidden-touch title is-2 is-spaced">Leaderboards</p>
+				<p class="is-hidden-touch title is-2 is-spaced">Main Leaderboards</p>
 				<center class="is-hidden-desktop"><p class="title is-2 is-spaced">Leaderboards</p></center>
 				<div class="tabs is-boxed leaderboard-tabs">
 					<ul>
@@ -64,7 +64,7 @@
 								<p>What is The Talos Principle?</p>
 							</div>
 							<div class="message-body">
-								<p>TTP is a philosophical puzzle game. The main goal is to collect "sigils" that allow you to unlock doors and puzzle mechanics.</p>
+								<p>TTP is a philosophical puzzle game. The main goal is to collect sigils that allow you to unlock doors and puzzle mechanics. You can get one of three endings to beat the game.</p>
 							</div>
 						</article>
 					</div>
@@ -74,7 +74,7 @@
 								<p>What's different between Talos flat and Talos VR?</p>
 							</div>
 							<div class="message-body">
-								<p>THe main differences are movement and precision. Many tricks performed in flat speedruns require the runner to do tricks by being in exact positions/lineups. These tricks are very hard/impossible in VR.</p>
+								<p>The main differences are movement and precision. Many tricks performed in flat speedruns require the runner to do tricks by being in exact positions/lineups. These tricks are very hard/impossible in VR.</p>
 								<p>There are certain tricks (ex: Thin wall clip) that can only be done in VR.</p>
 							</div>
 						</article>
